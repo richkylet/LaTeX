@@ -1,0 +1,190 @@
+\tolerance 10000
+\documentclass[10pt]{article}
+
+\usepackage{lipsum}
+
+\usepackage{mathptmx}
+\usepackage{amsmath,amsfonts,bm}            % mathematical typesetting
+\usepackage{graphicx}
+%\usepackage{fullpage}
+\usepackage{multirow}
+%%% The following two lines put citations in the form required by JASA
+\usepackage{overcite}
+\usepackage{fancyhdr, calc, lastpage}       % headers/footers
+\usepackage{lineno}
+\usepackage{booktabs}                       % tables
+\usepackage{lipsum}
+
+\setlength{\belowcaptionskip}{-6pt}
+\makeatletter \renewcommand\@biblabel[1]{$^{#1}\!\!$} \makeatother
+\fancyhf{}
+\fancyhead[RO,RE]{\em K.T. Rich, JASA-EL 2015}
+\fancyfoot[CO,CE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headsep}{24pt}
+\textheight = 8.45in
+\textwidth = 5.45in
+\hoffset=-0.2in
+\voffset = -.8125in
+
+\newcommand{\rb}{{\bf r}}
+\newcommand{\sgn}{\mbox{sgn}}
+% section heading
+\makeatletter
+\renewcommand\@seccntformat[1]{\csname the#1\endcsname.\hspace{.1cm}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\section{\@startsection {section}{1}{0pt}%
+	{-2ex plus -1ex minus -.2ex}%
+	{0.65ex plus 1.2ex}%
+	{\normalsize\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0pt}%
+	{-2.25ex plus -1ex minus -.2ex}%
+	{.45ex plus .2ex}%
+	{\normalsize\itshape}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{0pt}%
+	{-2.25ex plus -1ex minus -.2ex}%
+	{1ex plus .2ex}%
+	{\small\upshape}}
+\makeatother
+
+\renewcommand{\thetable}{\arabic{table}}
+
+\renewcommand{\listfigurename}{Figure Captions}
+\renewcommand\refname{\normalsize References}
+
+\renewcommand{\figurename}{\small \baselineskip=0.0666in Fig.}
+\renewcommand{\thefigure}{\small \arabic{figure}}
+\fancyfoot[L]{\footnotesize \today,  J. Acoust. Soc. Am}           
+
+\pagestyle{fancy}
+
+\begin{document}
+	\baselineskip=.155in
+	\parindent = 0.35in
+
+	\title{\ \vskip -.75in
+	\bf Reasons why Kyle T. Rich is the best human on Earth}
+	\author{{\bf \normalsize Kyle T. Rich} \\[-0.25ex]
+	{\em \small Biomedical Engineering Program, University of Cincinnati,
+			Cincinnati, Ohio 45267} \\[-0.5ex] {\em \small richkt@mail.uc.edu, doug.mast@uc.edu}}
+	%~\\~\\~\\~\\
+	
+	\date{}
+	\maketitle
+	%\end{titlepage}
+	%\end{document}
+	
+	\thispagestyle{fancy}
+	
+	%===========================================================================
+	\vbox{
+		\vskip -.1in
+		\hbox{
+			\hskip .5in
+			\begin{minipage}[t]{4.25in}
+				\baselineskip=.1333in
+				\noindent {\bf Abstract:} 
+				
+				\lipsum[1] % delete and replace with text!
+				
+				\vskip .1333in
+				\noindent {\small {\bf PACS numbers:} 43.35.Yb, 43.35.Ei} % replace with appropriate codes (Section 43 Acoustics):  http://www.aip.org/pacs/pacs2010/individuals/pacs2010_regular_edition/reg_acoustics_appendix.htm
+				
+				\noindent {\small {\bf Date received: xx xx 2015}}
+				
+			\end{minipage}
+		}}
+		
+		\begin{linenumbers}
+			
+			%===========================================================================
+			%===INTRO == =================================================================
+			%===========================================================================
+			\section{Introduction}
+			\lipsum[2-4] % delete and replace with text!
+			
+			%===========================================================================
+			%===METHODS =================================================================
+			%===========================================================================
+			
+			\section{Methods}
+			\lipsum[5] % delete and replace with text!
+						
+				\begin{equation}
+				|\bar{P}_{\rm PCD}(ka_{\rm s})| = \frac{1}{S_{\text{PCD}}}\left|\int _{S_{\text{PCD}}}p\left(\theta, ka_{\rm s}\right)dS\right|.
+				\end{equation}
+
+			\lipsum[6-7] % delete and replace with text!
+				
+			%===========================================================================
+			%===RESULTS =================================================================
+			%===========================================================================
+			\section{Results}
+			\lipsum[2-3] % delete and replace with text!
+			
+			%===========================================================================
+			%===DISCUSSION/Conclusions =================================================================
+			%===========================================================================
+			\section{Discussion and conclusion}
+						
+						
+			\lipsum[6-8] % delete and replace with text!
+			In conclusion, this is absolute, undeniable proof that KT Rich is by far the best human that has ever walked on Earth. % you may decide to leave this line in your manuscript, for obvious reasons. 
+			
+			
+			% ================================================================================================
+			
+			
+			\section*{Acknowledgments}
+			This research was supported by the Mayfield Education and Research Foundation and by the National Institutes of Health grant R01 CA158439.
+			
+		\end{linenumbers}
+		
+		\begin{thebibliography}{10}
+			\small{
+				\parskip = 0in
+				\vskip -10mm 
+				%1------------------
+				\bibitem{collin2011quantitative}
+				J.\ R.\ Collin and C.\ C.\ Coussios, 
+				``Quantitative observations of cavitation activity in a viscoelastic medium,'' 
+				J.\ Acoust.\ Soc.\ Am.\ 
+				{\bf 130}(5), 3289--3296 (2011). 
+				%2------------------
+				% xxxxxxxxxxNeed to update ??????!!!! xxxxxxxxxx
+				\bibitem{rich2014method}
+				K.\ T.\ Rich and T.\ D.\ Mast, ``A method to calibrate the absolute receive sensitivity of spherically focused, single-element transducers,'' 
+				J. Acoust.\ Soc.\ Am.\ 
+				{\bf 136}(4), 2302--2302 (2014). 
+				%3------------------
+				\bibitem{sboros2005absolute}
+				V.\ Sboros, S.\ D.\  Pye, C.\ A.\ MacDonald, J.\ Gomatam, C.\ M.\ Moran, and W.\ N.\ McDicken
+				D.\ M.\ Hallow, A.\ D.\ Mahajan, T.\ E.\ McCutchen, and M.\ R.\ Prausnitz, 
+				``Absolute measurement of ultrasonic backscatter from single microbubbles,'' 
+				Ultrasound Med.\ Biol.\
+				{\bf 31}(8), 1063--1072 (2006).
+				%%4------------------
+				\bibitem{faran1951sound}
+				J.\ J.\ Faran Jr, 
+				``Sound scattering by solid cylinders and spheres", 
+				J. Acoust.\ Soc.\ Am.\
+				{\bf 23}, 405--418 (1951). 
+				%%5------------------
+				\bibitem{hickling1962analysis}
+				R.\ Hickling, 
+				``Analysis of echoes from a solid elastic sphere
+				in water", 
+				J. Acoust.\ Soc.\ Am.\
+				{\bf 34}, 1582--1592 (1962). 
+				
+			}
+			
+		\end{thebibliography}
+		
+		
+		
+		
+		% ================================================================================================
+	\end{document}

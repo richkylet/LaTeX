@@ -1,0 +1,118 @@
+%-----------------------------------------
+% Kyle Rich
+% resume
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper, roman]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[black]{classic} %burgundy
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{lastpage}
+\usepackage{lipsum}
+
+
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.86]{geometry}
+
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{First}
+\familyname{Last Name}
+
+\colorlet{titlecolor}{color2}% save the secondary color before redefining it
+\definecolor{color2}{rgb}{0.1250,0.1250,0.1250}
+
+%\address{3960 Cardiovascular Center ML 0586}{Cincinnati, OH 45267-0586} %{}231 Albert Sabin Way}
+\address{123 Ipsom St}{Cincinnati, OH 45267-0586} %{}}
+\mobile{(555) 555--5555}
+\email{hotdog1969@hotmail.com}
+\homepage{richkylet.github.io}
+\social[linkedin]{mylinkedin}                        % optional, remove / comment the line if not wanted
+
+
+\begin{document}
+\maketitle
+\vspace{-3.75em}
+
+	\section{Summary of Qualifications}
+	\cvitem{}{
+		\vspace{-24pt}
+	\begin{itemize}\setlength\itemsep{-.15em}
+		\item{\lipsum[69]}
+		\vspace{-1.5pt}
+		\item{\lipsum[66]}
+		\vspace{-1.5pt}
+	\end{itemize}}
+	
+	\vspace{-18pt}
+	
+% ===============================
+% ===============================
+\section{Education}
+	\vspace{-3pt}
+	\cventry{2016}{Ph.D. candidate}{\textbf{Astrophysics}}{University of Cincinnati}{Cincinnati, OH}{}
+	
+	\vspace{-2pt}
+	
+	\cventry{2008}{Bachelor of Science (B.Sc.)}{\textbf{Physics}}{University}{City, St}{}
+	\vspace{-5pt}
+	
+	
+% ===============================
+	\section{Technical Skills}
+	\vspace{-3pt}
+	\cvitem{Programming:}{MATLAB, Python (numpy, scipy, matplotlib, pandas*, Jupyter*),  R (ggplot2*, Rstudio), Mathematica, \LaTeX, Git, Unix/Linux environment \small{(basic experience *)}} 
+	\vspace{-2pt}
+	\cvitem{Technical:}{Signal processing, modeling, simulation, \LaTeX}
+	\vspace{-5pt}
+	
+% ===============================
+% ===============================
+\section{Experience} 
+	\vspace{-4pt}
+	\cventry{2009 -- 16}{THE Research Lab}{Research Assistant}{THE University}{}{
+	    	\begin{itemize}  \setlength\itemsep{-.15em}
+				\normalsize 
+				\item
+				\lipsum[66]
+				\item 
+				\lipsum[75]
+	     	\end{itemize}
+	  }
+\vspace{-5pt}
+
+% ===============================
+% ===============================
+\section{Academic Awards~\& Leadership Experience}{}
+\vspace{-4pt}
+\cvitem{2013, 14}{Nobel Prize in Physics}\vspace{-1pt}
+\cvitem{2013}{Some University Award} \vspace{-1pt}
+\cvitem{2011, 12}{Best presentation award API}\vspace{-1pt}
+	
+% ===============================
+% ===============================
+\section{Professional Affiliations and Positions Held}
+		\cvitem{2011--16 }{President of some club} 
+		\cvitem{2013--14}{Member of some committee or organization} 
+
+  
+\end{document}
