@@ -1,0 +1,72 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% page dimensions/geometry----------------
+\usepackage[a4paper,
+width=150mm, %150?
+top=25mm,
+bottom=36mm]{geometry}
+% custom line spacing:----------------
+\usepackage{setspace}
+% make a title for dissertation: ----------------
+\title{This is the by far the best dissertation title that was ever created:  the best dissertation ever written}
+\makeatletter
+\let\theTitle\@title
+\makeatother
+
+%===============================
+\begin{document}
+%titlepage
+\thispagestyle{empty}
+\begin{center}
+	\begin{minipage}{1.\linewidth}
+		\centering
+		%Thesis title
+		\onehalfspacing{\huge \selectfont{\theTitle}\par}
+		\vspace{.1cm}
+		{\Large by \par}
+		%Author's name
+		%		\vspace{.1cm}
+		{\Large \textbf{First Middle  Last} \par}
+		%		\vspace{.1cm}
+		{\large B.S. Physics \par}
+		\vspace{.5cm}
+		%Degree
+		\onehalfspacing
+		{ \large
+			Submitted to the College of Engineering and Applied Sciences
+			Biomedical Engineering Program
+			in partial fulfillment of the requirements for the degree of \par
+			\uppercase{Doctor of Philosophy}  
+			\par 
+			at the \par
+			\uppercase{University of Somewhere}\par}		
+		\vspace{.5cm}
+		\rule{\textwidth}{1pt}
+		
+		{\large
+			\textbf{Dissertation Committee:} \par
+			John H.\ Smith, Ph.D.\ (Committee Chair)\par
+			\vspace{-.5em}{\small Dept.\ of Biomedical, Chemical, and Environmental Engineering}\par
+			%									\vspace{-.65em}{\small \& Biomedical Engineering Program} \par 
+			Cameron L.\ Horndigger, Ph.D.\ \par 
+			\vspace{-.5em}{\small Dept.\ of Internal Medicine \& Biomedical Engineering Program} \par 
+			Tyler H.\ Foster, Ph.D.\ \par 
+			\vspace{-.5em}{\small Dept.\ of Internal Medicine \& Biomedical Engineering Program} \par 
+			Swetha K.\ Rao, Ph.D.\ \par 
+			\vspace{-.5em}{\small Dept.\ of Environmental Health \& Biomedical Engineering Program} \par 
+		}
+		\rule{\textwidth}{.85pt}
+		\vspace{.65cm}
+		
+		%Date
+		{\large \today \par}
+		\vspace{0.25cm}
+		{ $\textcopyright$ University of Somwhere}
+		
+	\end{minipage}
+\end{center}
+
+\clearpage
+\end{document}          
